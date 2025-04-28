@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
+# MobiusEngine Job Application Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![MobiusEngine Logo](./my-app/src/assets/images/logo.svg)
 
-Currently, two official plugins are available:
+A modern React application for MobiusEngine's job application services, helping job seekers streamline their application process with professional assistance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## Expanding the ESLint configuration
+Visit the live application at: [mobusengine-abhay1704.netlify.app](https://mobusengine-abhay1704.netlify.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Comprehensive Service Plans**: Multiple pricing tiers for different job search needs
+- **Resume Building & Coaching**: Professional resume rebuilding and interview prep services
+- **Modern UI/UX**: Clean, responsive interface optimized for all devices
+- **Easy Navigation**: Intuitive layout for seamless user experience
+
+## Technologies Used
+
+- React.js
+- CSS Modules
+- Lucide React (for icons)
+- Netlify (deployment)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14.0.0 or later)
+- npm (v6.0.0 or later)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/mobieng.git
+   cd mobieng
+   ```
+
+2. Install dependencies:
+   ```bash
+   cd my-app
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## Project Structure
+
+```
+my-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   ├── components/
+│   │   ├── Footer/
+│   │   ├── Header/
+│   │   ├── Hero/
+│   │   ├── HowWeWork/
+│   │   ├── PricingPlans/
+│   │   ├── ResumeServices/
+│   │   ├── Testimonials/
+│   │   └── WhyChooseUs/
+│   ├── App.jsx
+│   └── index.js
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Component Overview
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Header**: Navigation menu and company logo
+- **Hero**: Main landing section with call-to-action
+- **HowWeWork**: Step-by-step explanation of the service process
+- **WhyChooseUs**: Key benefits and unique selling points
+- **PricingPlans**: Tiered service options with features and pricing
+- **ResumeServices**: Premium resume building and interview preparation offerings
+- **Testimonials**: Customer reviews and success stories
+- **Footer**: Company information and contact details
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Deployment
+
+The application is deployed on Netlify with continuous integration. Any pushes to the main branch will trigger a new deployment.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For questions or support, please reach out to our team at finance@mobiusengine.ai.
