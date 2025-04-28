@@ -1,0 +1,70 @@
+@import url('./colors.css');
+@import url('./fonts.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--text-dark);
+  font-family: var(--font-primary);
+  line-height: 1.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 50px; /* More rounded horizontally */
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--primary-dark);
+}
+
+.btn:hover {
+  background-color: rgba(2, 33, 131, 0.05);
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+  background-color: rgba(2, 33, 131, 0.05);
+}
+
+.btn-outline {
+  background-color: var(--white);
+  color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
+}
+
+.btn-outline:hover {
+  background-color: rgba(2, 33, 131, 0.05);
+  color: var(--primary-dark);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: var(--font-highlight);
+}
+

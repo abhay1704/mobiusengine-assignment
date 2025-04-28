@@ -1,0 +1,183 @@
+.aboutUs {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, #022183, #0649E7);
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem; /* Increased gap between profiles */
+  max-width: 900px; /* Reduced overall width */
+  margin: 0 auto;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: left;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.features {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.features li {
+  margin-bottom: 0.8rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.features li:before {
+  content: "✓";
+  color: var(--accent-green);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.cta {
+  margin-top: 2rem;
+}
+
+.cta .btn {
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+}
+
+.imageContent {
+  flex: 1;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.personContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.imageContainer {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.profileImage {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-position: top center;
+  object-fit: cover;
+  background: #fff;
+}
+
+.linkedinIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bioContent {
+  flex: 1;
+}
+
+.personName {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline;
+}
+
+.personBio {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+.personVision {
+  margin-top: 1rem;
+}
+
+.linkText {
+  color: white;
+  display: block; /* Changed to block to ensure proper alignment */
+  margin-top: 1rem; /* Reduced top margin between links */
+  text-decoration: none;
+  text-align: left; /* Ensure left alignment */
+}
+
+.linksContainer {
+  text-align: left;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.linkText:hover {
+  text-decoration: underline;
+}
+
+.arrowIcon {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+  
+  .imageContent {
+    order: -1;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .personContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .linksContainer {
+    text-align: center; /* Center align links only on mobile */
+  }
+}

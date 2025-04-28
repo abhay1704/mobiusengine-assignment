@@ -1,0 +1,142 @@
+.howWeWork {
+  background-color: var(--white);
+  padding: 60px 0;
+}
+
+.title {
+  text-align: left;
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 4rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stepsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 0 auto;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+  text-align: center;
+}
+
+.stepNumber {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  font-size: 26px;
+  border: solid 2px var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem; /* Reduced to create tighter spacing with line */
+  position: relative;
+  z-index: 2;
+}
+
+.stepNumber span {
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: var(--font-highlight);
+}
+
+.stepLine {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  margin-bottom: 0.5rem; /* Adding gap before title */
+  position: relative;
+  z-index: 1;
+}
+
+.stepTitle {
+  color: var(--primary-color);
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  line-height: 1.2;
+  max-width: 200px;
+  margin-top: 0.5rem;
+}
+
+.stepDescription {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .stepsContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1rem;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Keep aligned center in mobile */
+    text-align: center; /* Keep text centered */
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .stepNumber {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .stepLine {
+    /* Keep the vertical line below the circle in mobile view too */
+    width: 100%;
+    height: 2px;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+  }
+
+  .stepTitle {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .stepsContainer {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  
+  .stepTitle {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,506 @@
+.pricingPlans {
+  padding: 5rem 0;
+  background-color: var(--light-bg, #f9fafc);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--primary-dark);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.plansContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.plansLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.standardPlansContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.planCard {
+  flex: 1;
+  min-width: 275px;
+  max-width: 340px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid #e1e1e8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.planCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.primaryPlan {
+  border: 2px solid var(--primary-color);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.primaryPlan:hover {
+  transform: translateY(-15px) scale(1.03);
+}
+
+.primaryPlan::before {
+  content: "Most Popular";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent-green);
+  color: white;
+  padding: 4px 15px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.popularTag {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.planName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: var(--primary-dark);
+}
+
+.planPrice {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.amount {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.period {
+  font-size: 1rem;
+  color: #666;
+  margin-left: 2px;
+}
+
+.planDescription {
+  text-align: center;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e8;
+  margin-bottom: 1.5rem;
+}
+
+.planFeatures {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.planFeatures li {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.planFeatures li:before {
+  content: "✓";
+  color: var(--accent-green);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  flex: 1;
+}
+
+.featuresList li {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.checkIcon {
+  color: var(--accent-green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.featuresList li span {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.planCta {
+  text-align: center;
+  margin-top: auto;
+}
+
+.planCta .btn {
+  border-radius: 50px;
+  padding: 0.75rem 2.5rem;
+}
+
+.ctaButton {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.ctaButton:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Advanced Plan Styling */
+.advancePlan {
+  background-color: #0047cc;
+  color: white;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: auto;
+  padding: 2.5rem;
+}
+
+.advanceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.advanceHeaderWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.advancePricing {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.advanceHeader {
+  margin-bottom: 0;
+}
+
+.advanceFeatures {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.advancePlan .planName {
+  color: white;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  font-size: 1.8rem;
+}
+
+.advancePlan .featuresList {
+  margin-bottom: 0;
+  flex: 1;
+  min-width: 250px;
+}
+
+.advancePlan .featuresList li span {
+  color: white;
+}
+
+.advancePlan .planSubtitle {
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+  opacity: 0.9;
+  color: white;
+  text-align: left;
+}
+
+.advancePlan .price {
+  margin-bottom: 0;
+}
+
+.advancePlan .amount {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.advancePlan .period {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.advancePlan .divider {
+  display: none;
+}
+
+.advancePlan .checkIcon {
+  color: #4AD257;
+}
+
+.advancePlan .ctaButton {
+  background-color: white;
+  color: #0047cc;
+  margin-top: 0;
+}
+
+.advancePlan .ctaButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive styles for Advanced Plan */
+@media (max-width: 992px) {
+  .advancePlan {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .advanceContent {
+    width: 100%;
+  }
+  
+  .advancePricing {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 1.5rem;
+    order: -1;
+  }
+  
+  .advanceFeatures {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .plansContainer {
+    gap: 1rem;
+  }
+  
+  .planCard {
+    min-width: 240px;
+  }
+  
+  .standardPlansContainer {
+    gap: 1rem;
+  }
+  
+  .pricingPlans {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .plansContainer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .planCard, .primaryPlan {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+    margin-bottom: 2rem;
+  }
+  
+  .primaryPlan {
+    order: -1;
+  }
+  
+  .standardPlansContainer {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .planCard, .primaryPlan {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+  
+  .primaryPlan {
+    order: -1;
+  }
+  
+  .advancePlan {
+    padding: 1.75rem;
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+  
+  .advanceHeaderWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .advancePricing {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+  .advanceFeatures {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .advancePlan .ctaButton {
+    align-self: center;
+    margin-top: 1rem;
+  }
+  
+  .pricingPlans {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .planCard {
+    padding: 1.75rem;
+  }
+  
+  .amount {
+    font-size: 2.25rem;
+  }
+  
+  .popularTag {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2rem;
+  }
+  
+  .amount {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  
+  .planCard {
+    padding: 1.5rem;
+  }
+  
+  .planName {
+    font-size: 1.3rem;
+  }
+  
+  .amount {
+    font-size: 2rem;
+  }
+  
+  .featuresList li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .featuresList li span {
+    font-size: 0.9rem;
+  }
+  
+  .ctaButton {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  
+  .advancePlan .planName {
+    font-size: 1.5rem;
+  }
+  
+  .pricingPlans {
+    padding: 2.5rem 0;
+  }
+}
